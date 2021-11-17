@@ -1,13 +1,13 @@
 # Hello, World  
 *Project done during Full Stack Software Engineering studies at Holberton School. It aims to learn about variables, basics commands (print) and handle strings with Python.*   
 ## Technologies  
-*Shell Scripts are written in Bash 4.3.11(1)  
-*Python Scripts are written with Python 3.4.3  
-*C files are compiled using gcc 4.8.4  
-*Tested on Ubuntu 14.04 LTS  
+* Shell Scripts are written in Bash 4.3.11(1)  
+* Python Scripts are written with Python 3.4.3  
+* C files are compiled using gcc 4.8.4  
+* Tested on Ubuntu 14.04 LTS  
 ### Files
 | Filename |	Description |
-|__________|________________|
+|----------|----------------|
 | 0-run    | Shell script that runs a Python script, where its name is stored in an environment variable |
 | 1-run_inline  |	Shell script that runs a Python script, where Python code is saved in an environment variable |
 | 2-print.py |	Python script that prints a message |
