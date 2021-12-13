@@ -30,8 +30,13 @@ class Node:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
 
+"""
+Creating class SinglyLinkedList
+"""
+
 
 class SinglyLinkedList:
+
     def __str__(self):
         rtn = ""
         ptr = self.__head
