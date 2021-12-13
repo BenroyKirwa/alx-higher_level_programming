@@ -9,6 +9,30 @@ class Rectangle:
     class Rectangle that defines a rectangle by width and height
     """
 
+    def __init__(self,width=0,height=0):
+        """
+        Instantiation with optional width and height
+        """
+        self.height = height
+        self.width = width
+        Rectangle.number_of_instances += 1
+
+    number_of_instances = 0
+    print_symbol = "#"    
+
+    @property
+    def width(self):
+        """ method that returns the value of the width
+
+        Returns:
+            width of the rectangle
+
+
+        """
+
+        return self.__width
+
+    @width.setter
     def width(self,value):
         """
         Attribute to set the width of a rectangle
@@ -17,7 +41,21 @@ class Rectangle:
             raise TypeError("width must be an integer")
         elif value < 0:
             raise ValueError("width must be >=0")
+        self.__width = value
 
+    @property
+    def height(self):
+        """ method that returns the value of the height
+
+        Returns:
+            height of the rectangle
+
+
+        """
+
+        return self.__height
+
+    @height.setter
     def height(self,value):
         """
         Attribute to set the length of a rectangle
@@ -26,17 +64,7 @@ class Rectangle:
             raise TypeError("height must be an integer")
         elif value < 0:
             raise ValueError("height must be >=0")
-
-    number_of_instances = 0
-
-    def __init__(self,width=0,height=0):
-        """
-        Instantiation with optional width and height
-        """
-        self.height = height
-        self.width = width
-        Rectangle.number_of_instances += 1
-        print_symbol = "#"
+        self.__height = value
 
     def area(self):
         """
@@ -61,16 +89,15 @@ class Rectangle:
         """
         Prints the rectangle with the character #
         """
+        rec = ""
         if self.width == 0:
             print()
         elif self.height == 0:
             print()
         else:
             for i in range(0,self.height):
-                for k in range(self.width):
-                    print("#",end='')
-                print()
-            return str()
+                print(str((self.print_symbol)*self.width),end="\n")
+            return rec[:-1]
 
     def __repr__(self):
         return "Rectangle({:d},{:d})".format(self.width,self.height)
