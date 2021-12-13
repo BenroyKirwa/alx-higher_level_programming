@@ -1,7 +1,13 @@
 #!/usr/bin/python3
+"""
+Creating class Square
+"""
+
+
 class Square:
     """ A class that defines a square by its size
     """
+
     def __str__(self):
         rtn = ""
 
