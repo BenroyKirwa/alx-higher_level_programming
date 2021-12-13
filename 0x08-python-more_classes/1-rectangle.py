@@ -9,6 +9,13 @@ class Rectangle:
     class Rectangle that defines a rectangle by width and height
     """
 
+    def __init__(self,width=0,height=0):
+        """
+        Instantiation with optional width and height
+        """
+        self.__height = height
+        self.__width = width
+
     def width(self,value):
         """
         Method to set the width of a rectangle
@@ -26,10 +33,3 @@ class Rectangle:
             raise TypeError("height must be an integer")
         elif value < 0:
             raise ValueError("height must be >=0")
-
-    def __init__(self,width=0,height=0):
-        """
-        Instantiation with optional width and height
-        """
-        self.__width = width
-        self.__height = height
