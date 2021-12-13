@@ -6,6 +6,10 @@ Creating class Node
 
 class Node:
 
+    """
+    Creating class Node that defines a node of a singly linked list
+    """
+
     def __init__(self, data, next_node=None):
         self.data = data
         self.next_node = next_node
@@ -36,6 +40,9 @@ Creating class SinglyLinkedList
 
 
 class SinglyLinkedList:
+    """
+    Creating Class SinglyLinkedList that defines a singly linked list
+    """
 
     def __str__(self):
         rtn = ""
