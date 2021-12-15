@@ -65,14 +65,14 @@ class Rectangle:
         elif self.height == 0:
             print()
         else:
-            for i in range(0,self.height):
+            for i in range(0 ,self.height):
                 for k in range(self.width):
                     print("#", end='')
                 print()
             return str[:-1]
 
     def __repr__(self):
-        return "Rectangle({:d}, {:d})".format(self.width, self.height)
+        return "Rectangle({:d},{:d})".format(self.width, self.height)
 
     def __del__(self):
         print("Bye rectangle...")
