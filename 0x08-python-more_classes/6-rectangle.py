@@ -65,7 +65,7 @@ class Rectangle:
         elif self.height == 0:
             print()
         else:
-            for i in range(0 ,self.height):
+            for i in range(0, self.height):
                 for k in range(self.width):
                     print("#", end='')
                 print()
