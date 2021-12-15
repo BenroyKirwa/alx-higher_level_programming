@@ -64,7 +64,5 @@ class Rectangle:
             print()
         else:
             for i in range(0, self.height):
-                for k in range(self.width):
-                    print("#", end='')
-                print(spc)
+                spc += ("#"*self.width) + "\n"
             return spc[:-1]
