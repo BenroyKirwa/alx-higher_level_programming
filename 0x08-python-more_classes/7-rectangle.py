@@ -18,7 +18,7 @@ class Rectangle:
         Rectangle.number_of_instances += 1
 
     number_of_instances = 0
-    print_symbol = "#"    
+    print_symbol = "#"
 
     @property
     def width(self):
