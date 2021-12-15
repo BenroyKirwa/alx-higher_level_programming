@@ -9,7 +9,7 @@ class Rectangle:
     class Rectangle that defines a rectangle by width and height
     """
 
-    def __init__(self,width=0,height=0):
+    def __init__(self, width=0, height=0):
         """
         Instantiation with optional width and height
         """
@@ -33,11 +33,11 @@ class Rectangle:
         return self.__width
 
     @width.setter
-    def width(self,value):
+    def width(self, value):
         """
         Attribute to set the width of a rectangle
         """
-        if not isinstance(value,int):
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
         elif value < 0:
             raise ValueError("width must be >=0")
@@ -56,11 +56,11 @@ class Rectangle:
         return self.__height
 
     @height.setter
-    def height(self,value):
+    def height(self, value):
         """
         Attribute to set the length of a rectangle
         """
-        if not isinstance(value,int):
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
         elif value < 0:
             raise ValueError("height must be >=0")
@@ -89,19 +89,20 @@ class Rectangle:
         """
         Prints the rectangle with the character #
         """
-        rec = ""
+        spc = ""
         if self.width == 0:
-            print()
+            return spc
         elif self.height == 0:
-            print()
+            return spc
         else:
-            for i in range(0,self.height):
-                print(str((self.print_symbol)*self.width),end="\n")
-            return rec[:-1]
+            for i in range(self.height):
+                spc += (str(self.print_symbol)*self.width) + "\n"
+            return str(spc[:-1])
 
     def __repr__(self):
-        return "Rectangle({:d},{:d})".format(self.width,self.height)
+        return "Rectangle({:d}, {:d})".format(self.width, self.height)
 
     def __del__(self):
-        print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
+        print("Bye rectangle...")
+
