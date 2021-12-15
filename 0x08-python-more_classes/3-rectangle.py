@@ -59,10 +59,10 @@ class Rectangle:
         """
         spc = ""
         if self.width == 0:
-            print()
+            return spc
         elif self.height == 0:
-            print()
+            return spc
         else:
             for i in range(0, self.height):
                 spc += ("#"*self.width) + "\n"
-            return spc[:-1]
+            return str(spc[:-1])
