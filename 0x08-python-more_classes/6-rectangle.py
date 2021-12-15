@@ -9,27 +9,27 @@ class Rectangle:
     class Rectangle that defines a rectangle by width and height
     """
 
-    def width(self,value):
+    def width(self, value):
         """
         Attribute to set the width of a rectangle
         """
-        if not isinstance(value,int):
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
         elif value < 0:
             raise ValueError("width must be >=0")
 
-    def height(self,value):
+    def height(self, value):
         """
         Attribute to set the length of a rectangle
         """
-        if not isinstance(value,int):
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
         elif value < 0:
             raise ValueError("height must be >=0")
 
     number_of_instances = 0
 
-    def __init__(self,width=0,height=0):
+    def __init__(self, width=0, height=0):
         """
         Instantiation with optional width and height
         """
@@ -67,12 +67,12 @@ class Rectangle:
         else:
             for i in range(0,self.height):
                 for k in range(self.width):
-                    print("#",end='')
+                    print("#", end='')
                 print()
             return str[:-1]
 
     def __repr__(self):
-        return "Rectangle({:d},{:d})".format(self.width,self.height)
+        return "Rectangle({:d},{:d})".format(self.width, self.height)
 
     def __del__(self):
         print("Bye rectangle...")
