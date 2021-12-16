@@ -21,7 +21,7 @@ Passing 0 as the size of the square
 
     >>> print_square(0)
 
-Passing a float number as the size of the square
+Passing the float number as the size of the square
 
     >>> print_square(1.0)
     Traceback (most recent call last):
