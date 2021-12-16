@@ -13,7 +13,7 @@ def matrix_divided(matrix, div):
             if type(num) not in [int, float]:
                 raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     total_length = sum(len(row) for row in matrix)
-    if total_length % 2 != 0:
+    if total_length % 2 != 0 and total_length != 1:
         raise TypeError("Each row of the matrix must have the same size")
     if type(div) not in [int, float]:
         raise TypeError("div must be a number")
