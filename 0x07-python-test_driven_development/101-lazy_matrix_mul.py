@@ -8,5 +8,4 @@ def lazy_matrix_mul(m_a, m_b):
     """
     Function multiplies two matrices using Numpy
     """
-    x = numpy.einsum("ik,kj->ij", m_a, m_b)
-    return x
+    return (numpy.matmul(m_a, m_b))
