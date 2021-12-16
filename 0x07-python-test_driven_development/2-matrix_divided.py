@@ -3,8 +3,10 @@
 Function that divides all element of a matrix
 """
 def matrix_divided(matrix, div):
+
+
     """
-    Funtion that divides all elements of a matrix
+    Function that divides all elements of a matrix
     """
     for y in matrix:
         if not y or not isinstance(y, list):
