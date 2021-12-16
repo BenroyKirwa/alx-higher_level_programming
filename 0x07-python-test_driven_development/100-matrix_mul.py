@@ -4,6 +4,9 @@ Function that multiplies two matrices
 """
 
 def matrix_mul(m_a, m_b):
+    """
+    Function that multiplies two matrices and must be a list
+    """
     if type(m_a) not in [list]:
         raise TypeError("m_a must be a list")
     if type(m_b) not in [list]:
