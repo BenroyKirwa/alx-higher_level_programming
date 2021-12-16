@@ -32,5 +32,4 @@ def matrix_mul(m_a, m_b):
     result = [[sum(a * b for a, b in zip(m_a_row, m_b_col))
                for m_b_col in zip(*m_b)]
              for m_a_row in m_a]
-    for r in result:
-        print(r)
+    return result
