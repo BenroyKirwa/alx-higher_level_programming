@@ -2,11 +2,11 @@
 """
 Function that multiplies two atrices using Numpy
 """
-import numpy as np
+import numpy
 
-def lazy_matrix_mul(m_a,m_b):
+def lazy_matrix_mul(m_a, m_b):
     """
     Function multiplies two matrices using Numpy
     """
-    m = np.dot(m_a,m_b)
-    print(m)
+    x = numpy.einsum("ik,kj->ij", m_a, m_b)
+    return x
