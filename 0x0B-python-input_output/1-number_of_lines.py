@@ -5,7 +5,7 @@
 
 
 def number_of_lines(filename=""):
-    """ Function that reads from a file and prints its number of lines
+    """ Function that reads from the file and prints its number of lines
 
     Args:
         filename: filename
