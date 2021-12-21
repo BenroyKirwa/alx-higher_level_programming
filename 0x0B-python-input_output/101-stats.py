@@ -5,6 +5,7 @@ import sys
 
 class Magic:
     """ Class to generates instances with dict and size"""
+
     def __init__(self):
         """ Init method """
         self.dic = {}
