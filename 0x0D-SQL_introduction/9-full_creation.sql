@@ -4,5 +4,27 @@ CREATE TABLE IF NOT EXISTS second_table(
        name VARCHAR(256)
        score INT
 );
-INSERT INTO second_table
-VALUES ROW(1,2,3,4), ROW("John", "Alex", "Bob", "George"), ROW(10,3,14,8);
+INSERT INTO second_table(
+       id,
+       name,
+       score
+)
+VALUES
+(
+	1,
+	2,
+	3,
+	4
+),
+(
+	"John",
+	"Alex",
+	"Bob",
+	"George"
+),
+(
+	10,
+	3,
+	14,
+	8
+);
