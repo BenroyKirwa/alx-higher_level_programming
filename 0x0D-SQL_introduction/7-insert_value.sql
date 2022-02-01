@@ -1,2 +1,2 @@
 -- Inserts a new row to the table
-VALUES ROW(89), ROW(Best School);
+INSERT INTO first_table VALUES ROW(89), ROW(Best School);
